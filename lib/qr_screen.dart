@@ -54,16 +54,16 @@ class QRCodeScreen extends StatelessWidget {
                 ),
               ),
             ),
-            // const SizedBox(height: 20),
-            // Text(
-            //   'Show this QR code at the event',
-            //   style: Theme.of(context).textTheme.titleLarge,
-            // ),
-            // const SizedBox(height: 10),
-            // Text(
-            //   'Event ID: $eventId',
-            //   style: Theme.of(context).textTheme.bodyLarge,
-            // ),
+            const SizedBox(height: 20),
+            Text(
+              'Show this QR code at the event',
+              style: Theme.of(context).textTheme.titleLarge,
+            ),
+            const SizedBox(height: 10),
+            Text(
+              'Event ID: $eventId',
+              style: Theme.of(context).textTheme.bodyLarge,
+            ),
           ],
         ),
       ),

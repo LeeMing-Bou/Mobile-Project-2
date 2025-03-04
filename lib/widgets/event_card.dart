@@ -14,6 +14,7 @@ class EventCard extends StatefulWidget {
   final bool isFavorited;
   final bool isPaticipant;
   final int favoritesCount;
+  final int participantsCount;
   final String? toggleFavoriteUrl;
   final Function()? onFavoriteToggled;
 
@@ -26,6 +27,7 @@ class EventCard extends StatefulWidget {
     this.isFavorited = false,
     required this.isPaticipant,
     this.favoritesCount = 0,
+    this.participantsCount = 0,
     this.toggleFavoriteUrl,
     this.onFavoriteToggled,
   });
@@ -140,6 +142,7 @@ class _EventCardState extends State<EventCard> {
                   startDate: DateTime.now(), // Placeholder
                   endDate: null,
                   favoritesCount: _favoritesCount,
+                  participantsCount: widget.participantsCount,
                   isFavorited: _isFavorited,
                   isParticipant: widget.isPaticipant,
                   isFeatured: false,

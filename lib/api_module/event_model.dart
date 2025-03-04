@@ -71,6 +71,7 @@ class Attributes {
     final DateTime startDate;
     final DateTime? endDate;
     final int favoritesCount;
+    final int participantsCount;
     final bool isFavorited;
     final bool? isParticipant;
     final bool isFeatured;
@@ -81,6 +82,7 @@ class Attributes {
         required this.startDate,
         required this.endDate,
         required this.favoritesCount,
+        required this.participantsCount,
         required this.isFavorited,
         required this.isParticipant,
         required this.isFeatured,
@@ -92,6 +94,7 @@ class Attributes {
         startDate: DateTime.parse(json["start_date"]),
         endDate: DateTime.parse(json["end_date"]),
         favoritesCount: json["favorites_count"],
+        participantsCount: json["participants_count"],
         isFavorited: json["is_favorited"],
         isParticipant: json["is_participant"],
         isFeatured: json["is_featured"],
@@ -103,6 +106,7 @@ class Attributes {
         "start_date": startDate.toIso8601String(),
         "end_date": endDate?.toIso8601String(),
         "favorites_count": favoritesCount,
+        "participants_count": participantsCount,
         "is_favorited": isFavorited,
         "is_participant": isParticipant,
         "is_featured": isFeatured,
